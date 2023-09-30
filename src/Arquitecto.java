@@ -24,7 +24,7 @@ public class Arquitecto extends Empleado {
 
     @Override
     public String toString() {
-        return "Arquitecto{" +
+        return super.toString() + "Arquitecto{" +
                 "cantidad_proyectos=" + cantidad_proyectos +
                 '}';
     }

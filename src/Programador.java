@@ -1,9 +1,9 @@
 public class Programador extends Empleado {
 
-    private String numero_lineas_por_hora;
+    private int numero_lineas_por_hora;
     private String lenguaje_programa;
 
-    public Programador(String nombre, String identificacion, int edad, String estado_civil, float salario, String numero_lineas_por_hora, String lenguaje_programa) {
+    public Programador(String nombre, String identificacion, int edad, String estado_civil, float salario, int numero_lineas_por_hora, String lenguaje_programa) {
         super(nombre, identificacion, edad, estado_civil, salario);
         this.numero_lineas_por_hora = numero_lineas_por_hora;
         this.lenguaje_programa = lenguaje_programa;
@@ -11,15 +11,15 @@ public class Programador extends Empleado {
 
     public Programador() {
         super();
-        this.numero_lineas_por_hora = "";
+        this.numero_lineas_por_hora = 0;
         this.lenguaje_programa = "";
     }
 
-    public String getNumero_lineas_por_hora() {
+    public int getNumero_lineas_por_hora() {
         return numero_lineas_por_hora;
     }
 
-    public void setNumero_lineas_por_hora(String numero_lineas_por_hora) {
+    public void setNumero_lineas_por_hora(int numero_lineas_por_hora) {
         this.numero_lineas_por_hora = numero_lineas_por_hora;
     }
 
@@ -33,7 +33,7 @@ public class Programador extends Empleado {
 
     @Override
     public String toString() {
-        return "Programador{" +
+        return  super.toString() + "Programador{" +
                 "numero_lineas_por_hora='" + numero_lineas_por_hora + '\'' +
                 ", lenguaje_programa='" + lenguaje_programa + '\'' +
                 '}';

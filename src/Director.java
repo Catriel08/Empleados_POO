@@ -22,7 +22,7 @@ public class Director extends Empleado {
 
     @Override
     public String toString() {
-        return "Director{" +
+        return super.toString() + "Director{" +
                 "years_experience='" + years_experience + '\'' +
                 '}';
     }
